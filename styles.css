@@ -1,0 +1,644 @@
+/* Resetting default margin, padding, font-family, and text color */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan', sans-serif;
+    color: #393D47;
+    background-color: #f0eee5;
+}
+
+/* Styling for various heading levels */
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #9C9B97;
+    margin: 0;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #9C9B97;
+    margin: 0;
+}
+
+h4 {
+    font-size: 20px;
+    color: #9C9B97;
+    margin: 0;
+}
+
+h3 {
+    margin: 0;
+}
+
+h5 {
+    margin: 0;
+    margin-top: 5px;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+    margin: 0;
+}
+
+/* Styling for paragraphs */
+p {
+    font-size: 16px;
+    color: #9C9B97;
+}
+
+/* Padding for a section with class 'section-p1' */
+.section-p1 {
+    padding: 100px 0;
+}
+
+/* Styling for links */
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Styling for the header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #f0eee5;
+    box-shadow: 0 5 15px rgba(0, 0, 0, 0.06);
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 40px;
+}
+
+/* Styling for navigation links */
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    padding: 0 20px;
+    position: relative;
+}
+
+nav ul li a {
+    font-size: 20px;
+    font-weight: 600;
+    color: #393D47;
+    transition: 0.4s ease;
+}
+
+/* Hover and active styles for navigation links */
+nav ul li a:hover,
+nav ul li a.active {
+    color: #000;
+}
+
+nav ul li a.active::after,
+nav ul li a:hover::after {
+    content: '';
+    position: absolute;
+    width: 40%;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    bottom: -4px;
+    right: 20px;
+}
+
+/* Styling for the banner section */
+.banner {
+    margin: 0;
+    background-image: url("images/mainbg.jpg");
+    background-size: cover;
+    height: 90vh;
+    width: 89.45%;
+    background-position: top 25% left 50%;
+    padding: 0px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/* Styling for heading and button in the banner */
+.banner h1 {
+    color: #A9B5D4;
+}
+
+.banner h4 {
+    padding-bottom: 15px;
+}
+
+.banner button {
+    font-size: 16px;
+    border-radius: 40px;
+    color: white;
+    background-color: #222;
+    padding: 14px 40px 14px 40px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* Hover style for the button in the banner */
+.banner button:hover {
+    background-color: #000;
+}
+
+/* Styling for links in the banner */
+.banner a {
+    color: white;
+}
+
+/* Styling for the logo */
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+}
+
+/* Styling for the benefits section */
+.benefits {
+    padding: 40px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Styling for individual benefits */
+.benefit1 {
+    width: 180px;
+    height: 250px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.06);
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+.benefit1 img {
+    width: 100px;
+    height: auto;
+}
+
+/* Hover style for individual benefits */
+.benefit1:hover {
+    box-shadow: 10px 10px 34px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the newsletter section */
+.newsletter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-image: url("images/newsbg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 40px 80px;
+    margin-top: 40px;
+}
+
+/* Styling for heading in the newsletter section */
+.newsletter h2 {
+    color: black;
+}
+
+/* Styling for input in the newsletter section */
+.newsletter input {
+    width: 300px;
+    height: 60px;
+    font-size: 20px;
+    text-align: left;
+    border-radius: 40px;
+    border: 1px solid transparent;
+    outline: none;
+    padding: 0 20px;
+    margin: 20px 0;
+}
+
+/* Focus style for input in the newsletter section */
+.newsletter input:focus {
+    border: 1px solid #000;
+}
+
+/* Styling for button in the newsletter section */
+.newsletter button {
+    font-size: 16px;
+    border-radius: 40px;
+    color: white;
+    background-color: #000;
+    padding: 14px 40px 14px 40px;
+    cursor: pointer;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+/* Hover style for button in the newsletter section */
+.newsletter button:hover {
+    background-color: #545454;
+}
+
+/* Styling for the footer */
+footer {
+    margin: 0;
+}
+
+/* Styling for the footer content */
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 80px;
+}
+
+/* Styling for links in the footer */
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 0;
+    list-style: none;
+    color: white;
+    padding-top: 20px;
+}
+
+.links h6 {
+    margin: 0 20px;
+}
+
+/* Styling for social icons in the footer */
+.socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 0;
+    list-style: none;
+    color: white;
+}
+
+.socials li {
+    margin-right: 10px;
+}
+
+/* Hover style for social icons in the footer */
+.socials li a:hover {
+    color: #222;
+}
+
+/* Styling for footer content headings */
+.footer-content h6 {
+    cursor: pointer;
+}
+
+/* Hover style for footer content headings */
+.footer-content h6 a:hover {
+    color: brown;
+}
+
+/* Styling for footer bottom section */
+.footer-bottom {
+    color: black;
+    text-align: center;
+}
+
+/* Styling for text in the footer bottom section */
+.footer-bottom p {
+    font-size: 12px;
+    margin: 0;
+    padding: 5px 0;
+}
+
+/* Styling for footer logo */
+.footer-content img {
+    padding: 20px 40px;
+    width: 60px;
+    height: auto;
+}
+
+/* Styling for the featured section */
+.featured {
+    padding: 40px 80px;
+    text-align: center;
+}
+
+/* Styling for product container */
+.productcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+/* Styling for individual product */
+.product {
+    width: 250px;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #d9d9d9;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    transition: 0.2s ease;
+    border-radius: 25px;
+    margin: 15px;
+}
+
+/* Hover style for individual product */
+.product:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for product image */
+.product img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* Styling for product details section */
+.productdets {
+    display: flex;
+    margin-top: 20px;
+    padding: 40px 80px;
+}
+
+/* Styling for product image in details */
+.productdets-image {
+    width: 40%;
+    margin-right: 50px;
+}
+
+.productdets-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 40px;
+}
+
+/* Styling for small product images in details */
+.productdets-small {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.productdets-small img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin: 10px 0;
+}
+
+/* Styling for small product image container */
+.small-images {
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+/* Styling for active small product image */
+.productdets-small img.active {
+    filter: brightness(90%);
+}
+
+/* Styling for image transition */
+.transition {
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Hover style for image transition */
+.transition:hover {
+    opacity: 0.5;
+}
+
+/* Styling for single product section */
+.single-product {
+    width: 50%;
+    padding-top: 30px;
+}
+
+/* Styling for headings in single product section */
+.single-product h2 {
+    padding: 20px 0 20px 0;
+}
+
+/* Styling for input in single product section */
+.single-product input {
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+/* Styling for add to cart button in single product section */
+.single-product #addcart {
+    font-size: 16px;
+    border-radius: 40px;
+    color: white;
+    background-color: gray;
+    padding: 14px 40px 14px 40px;
+    cursor: pointer;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+/* Hover style for add to cart button in single product section */
+.single-product #addcart:hover {
+    background-color: #545454;
+}
+
+/* Styling for quantity input */
+#quantity {
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* Styling for add to cart button */
+#addcart {
+    display: block;
+}
+
+/* Styling for quantity controls */
+.quantity {
+    position: relative;
+    width: 20%;
+    margin-bottom: 10px;
+}
+
+/* Styling for controls within quantity input */
+.controls {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    padding: 0 10px;
+    transform: translateY(-50%);
+}
+
+/* Styling for buttons within quantity controls */
+.controls button {
+    display: block;
+    background: transparent;
+    font-size: 1.5em;
+    border: none;
+}
+
+/* Styling for heading in single product section */
+.single-product h3 {
+    padding: 20px 0 20px 0;
+}
+
+/* Styling for span in single product section */
+.single-product span {
+    display: block;
+    width: 60%;
+    height: 40px;
+}
+
+/* Styling for small images in single product section */
+.small-images {
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+/* Styling for active small image in single product section */
+.small-images.matching {
+    filter: brightness(0.8);
+}
+
+/* Hover style for small images in single product section */
+.small-images img:hover {
+    filter: brightness(90%);
+}
+
+/* Styling for legal section */
+.legal {
+    padding: 40px 250px;
+}
+
+/* Styling for contact section */
+.contact {
+    padding: 40px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Styling for heading in contact section */
+.contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+}
+
+/* Styling for contact form */
+#contact-form {
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Styling for form row */
+.form-row {
+    margin-bottom: 20px;
+}
+
+/* Styling for contact inputs */
+.contact-inputs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-inputs input,
+.contact-inputs select,
+.contact-inputs textarea {
+    width: 48%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Styling for select in contact inputs */
+.contact-inputs select {
+    width: 60%;
+    margin-right: 25px;
+}
+
+/* Styling for textarea in contact inputs */
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+/* Styling for submit button in contact inputs */
+#submit {
+    padding: 12px 20px;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+/*hover style*/
+#submit:hover {
+    background-color: #545454;
+}
+.stars{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0;
+}
+.stars i{
+    color:orange;
+}
+.aboutus{
+    display: flex;
+    margin-top: 20px;
+    padding: 40px 80px;
+}
+.aboutus-image{
+    width: 40%;
+    margin-right: 50px;
+}
+.aboutus-image img{
+    width: 100%;
+    height: auto;
+    border-radius: 40px;
+}
+.aboutusdetails{
+    width: 50%;
+    padding-top: 30px;
+}
+.aboutusdetails h2{
+    padding: 20px 0 20px 0;
+    color:black;
+}
+.aboutusdetails p{
+    color:black;
+    font-size: 22px;
+}

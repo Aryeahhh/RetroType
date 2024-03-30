@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RetroType</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo"><img src="images/logo3.png" alt="logo"></a>
+        <nav>
+            <ul class="nav__links">
+                <li><a  href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Contact page-->
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <div class="form-row">
+                <div class="contact-inputs">
+                    <input type="text" name="first_name" id="first_name" placeholder="First Name" required>
+                    <input type="text" name="last_name" id="last_name" placeholder="Last Name" required>
+                </div>
+            </div>
+            <!--Complain Category-->
+            <div class="form-row">
+                <div class="contact-inputs">
+                    <select name="category" id="category" required>
+                        <option value="" disabled selected>Select Inquiry Type</option>
+                        <option value="inquiry1">Refunds</option>
+                        <option value="inquiry2">Damaged Product</option>
+                        <option value="inquiry3">Delivery</option>
+                    </select>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                </div>
+            </div>
+    
+            <div class="form-row">
+                <textarea name="message" id="message" placeholder="Your Message" rows="6" required></textarea>
+            </div>
+    
+            <div class="form-row">
+                <button id="submit" type="submit">Submit</button>
+            </div>
+        </form>
+    <section class="benefits">
+        <div class="benefit1">
+            <img src="images/benefit-1.png" alt="Worldwide shipping">
+            <h3>FREE SHIPPING WORLDWIDE</h3>
+            <p>We deliver to your doorstep, ensuring that your new typewriter arrives promptly and in perfect condition.</p>
+        </div>
+        <div class="benefit1">
+            <img src="images/benefit-2.png" alt="Piece of History">
+            <h3>REDISCOVER THE ART OF WRITING</h3>
+            <p>Don't miss out on the opportunity to own a piece of history. Join the typewriter revolution and make writing a personal, meaningful experience once again.</p>
+        </div>
+        <div class="benefit1">
+            <img src="images/benefit-3.png" alt="Guarantee">
+            <h3>GUARANTEE</h3>
+            <p>30 day guarantee with every order</p>
+        </div>
+        <div class="benefit1">
+            <img src="images/benefit-4.png" alt="Sustainability">
+            <h3>SHOP SUSTAINABLY</h3>
+            <p>with preloved and recycled typewriters</p>
+        </div>
+        <div class="benefit1">
+            <img src="images/benefit-5.png" alt="Aesthetic">
+            <h3>UNMATCHED AESTHETIC APPEAL</h3>
+            <p>Each keystroke echoes with a sense of vintage elegance, turning every writing session into a journey back in time.</p>
+        </div>
+        <div class="benefit1">
+            <img src="images/benefit-6.png" alt="Unplug">
+            <h3>UNPLUG AND RECONNECT</h3>
+            <p>Take a break from screens and rediscover the joy of writing. Typewriters bring back the human touch to your communication, making every word count.</p>
+        </div>
+    </section>
+    
+    <footer>
+        <section class="newsletter">
+            <div class="newstext">
+                <h2>Sign up for our newsletter</h2>
+                <p>Get the latest news and offers</p>
+            </div>
+            <div class="form">
+                <input type="email" placeholder="Enter your email address">
+                <button>Subscribe</button>
+            </div>
+        </section>
+        <div class="footer-content">
+            <div class="links">
+                <h6><a href="privacypol.html">Privacy Policy</a></h6>
+                <h6><a href="privacypol.html#PrivacyPolicy">Terms & Conditions</a></h6>
+                <h6><a href="privacypol.html#Terms">Refund Policy</a></h6>
+                <h6><a href="privacypol.html#Refund">Delivery & Returns</a></h6>
+                <ul class="socials">
+                    <li><a href="https://www.facebook.com" target="_blank" rel="noopener norefferer"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com" target="_blank" rel="noopener norefferer"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://www.twitter.com" target="_blank" rel="noopener norefferer"><i class="fa fa-twitter"></i></a></li>
+                </ul>
+            </div>
+            <a href="#" class="logo"><img src="images/logo3.png" alt="logo"></a>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2023 RetroType. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

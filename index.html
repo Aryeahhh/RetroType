@@ -1,0 +1,151 @@
+<!--Tried writing better html and css in general I saw some guides on how to make my code look better and more efficient, still improving step by step-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RetroType</title>
+    <link rel="stylesheet" href="styles.css">
+    <!--Importing font and an icon library-->
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+</head>
+<body>
+    <!--this website is heavily inspired by https://retrocamerashop.com/ and https://torontotypewriters.com/ especially retrocamerashop, really liked how they showed off their aesthetic-->
+    <header>
+        <!--Logo and navigation bar-->
+        <a href="index.html" class="logo"><img src="images/logo3.png" alt="logo"></a>
+        <nav>
+            <!--I didn't use php for this cuz I didn't know how to change the class for each tab and honestly I was too lazy to figure it out-->
+            <ul class="nav__links">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Saw this type of banner on H&M a few days ago and tried to recreate it-->
+    <section class="banner">
+        <h4>Black Friday Offer</h4>
+        <h2>Unleash Your Creativity with the</h2>
+        <h1>Timeless Elegance of Typewriters!</h1>
+        <p>Save more with upto 50% off!</p>
+        <a href="shop.html"><button>Shop Now</button></a>
+    </section>  
+    <!--Tried to recreate the features tab thing from retrocamerashop but with a few more icons of my own -->
+    <section class="benefits">
+        <div class="benefit1">
+            <img src="images/benefit-1.png" alt="Worldwide shipping">
+            <h3>FREE SHIPPING WORLDWIDE</h3>
+            <p>We deliver to your doorstep, ensuring that your new typewriter arrives promptly and in perfect condition.</p>
+        </div>
+        <div class="benefit1">
+            <img src="images/benefit-2.png" alt="Piece of History">
+            <h3>REDISCOVER THE ART OF WRITING</h3>
+            <p>Don't miss out on the opportunity to own a piece of history. Join the typewriter revolution and make writing a personal, meaningful experience once again.</p>
+        </div>
+        <div class="benefit1">
+            <img src="images/benefit-3.png" alt="Guarantee">
+            <h3>GUARANTEE</h3>
+            <p>30 day guarantee with every order</p>
+        </div>
+        <div class="benefit1">
+            <img src="images/benefit-4.png" alt="Sustainability">
+            <h3>SHOP SUSTAINABLY</h3>
+            <p>with preloved and recycled typewriters</p>
+        </div>
+        <div class="benefit1">
+            <img src="images/benefit-5.png" alt="Aesthetic">
+            <h3>UNMATCHED AESTHETIC APPEAL</h3>
+            <p>Each keystroke echoes with a sense of vintage elegance, turning every writing session into a journey back in time.</p>
+        </div>
+        <div class="benefit1">
+            <img src="images/benefit-6.png" alt="Unplug">
+            <h3>UNPLUG AND RECONNECT</h3>
+            <p>Take a break from screens and rediscover the joy of writing. Typewriters bring back the human touch to your communication, making every word count.</p>
+        </div>
+    </section>
+    <!--Just a basic product line-->
+    <section class="featured">
+        <h2>Some of our products</h2>
+        <div class="productcontainer">
+            <a href="products.html?product=1">
+                <div class="product" id="1">
+                    <img src="images/featured-1.webp" alt="Typewriter image">
+                    <div class="producttext">
+                        <span>Smith Corona</span>
+                        <h3>Smith Corona Galaxie Deluxe Typewriter</h3>
+                        <h5>$369.99 CAD</h5>
+                    </div>
+                </div>
+            </a>
+            <a href="products.html?product=2">
+                <div class="product" id="2">
+                    <img src="images/featured-2.webp" alt="Typewriter image">
+                    <div class="producttext">
+                        <span>Underwood</span>
+                        <h3>Underwood Universal Typewriter</h3>
+                        <h5>$899.99 CAD</h5>
+                    </div>
+                </div>
+            </a>
+            <a href="products.html?product=3" >
+                <div class="product" id="3">
+                    <img src="images/featured-3.webp" alt="Typewriter image">
+                    <div class="producttext">
+                        <span>Underwood</span>
+                        <h3>Underwood Deluxe Typewriter</h3>
+                        <h5>$249.99 CAD</h5>
+                    </div>
+                </div>
+            </a>
+            <a href="products.html?product=4" >
+                <div class="product" id="4">
+                    <img src="images/featured-4.webp" alt="Typewriter image">
+                    <div class="producttext">
+                        <span>Remington</span>
+                        <h3>Remington Travel Riter Typewriter</h3>
+                        <h5>$499.99 CAD</h5>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+    <!--Newsletter-->
+    <footer>
+        <section class="newsletter">
+            <div class="newstext">
+                <h2>Sign up for our newsletter</h2>
+                <p>Get the latest news and offers</p>
+            </div>
+            <div class="form">
+                <input type="text" placeholder="Enter your email address">
+                <button>Subscribe</button>
+            </div>
+        </section>
+        <!--Footer links-->
+        <div class="footer-content">
+            <div class="links">
+                <h6><a href="privacypol.html">Privacy Policy</a></h6>
+                <h6><a href="privacypol.html#PrivacyPolicy">Terms & Conditions</a></h6>
+                <h6><a href="privacypol.html#Terms">Refund Policy</a></h6>
+                <h6><a href="privacypol.html#Refund">Delivery & Returns</a></h6>
+                <ul class="socials">
+                    <li><a href="https://www.facebook.com" target="_blank" rel="noopener norefferer"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com" target="_blank" rel="noopener norefferer"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://www.twitter.com" target="_blank" rel="noopener norefferer"><i class="fa fa-twitter"></i></a></li>
+                </ul>
+            </div>
+            <a href="#" class="logo"><img src="images/logo3.png" alt="logo"></a>
+        </div>
+        <!--Trademark-->
+        <div class="footer-bottom">
+            <p>© 2023 RetroType. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <!--The script-->
+    <script src="app.js"></script>
+</body>
+</html>

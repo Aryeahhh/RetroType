@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RetroType - Product Details</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo"><img src="images/logo3.png" alt="logo"></a>
+        <nav>
+            <ul class="nav__links">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <section class="productdets">
+        <div class="productdets-image">
+            <!--All images and data are dynamically 'generated' by javascript-->
+            <img src="" width="100%" id="largeimage" alt="Product Image" class="product-image">
+            <div class="productdets-small">
+                
+                <div class="small-images" >
+                    <img src="" width="100%" class="small-image" id="smallimage1" alt="Product Image">
+                </div>
+                <div class="small-images">
+                    <img src="" width="100%" class="small-image" id="smallimage2" alt="Product Image">
+                </div>
+                <div class="small-images">
+                    <img src="" width="100%" class="small-image" id="smallimage3" alt="Product Image">
+                </div>
+                <div class="small-images">
+                    <img src="" width="100%" class="small-image" id="smallimage4" alt="Product Image">
+                </div>
+            </div>
+        </div>
+        <!--All details except stars are dynamically 'generated' by my js script-->
+        <div class="single-product">
+            <h6 id="product-brand"></h6>
+            <h2 id="product-name"></h2>
+            <h3 id="product-price"></h3>
+            <span class="stars">5  <i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i></span>
+            <!--I looked at the torontotypewriters quantity tab and wanted to make something like that-->
+            <div class="quantity">
+                <input type="number" value="1" id="quantity">
+                <div class="controls">
+                    <button id="increase">+</button>
+                    <button id="decrease">-</button>
+                </div>
+            </div>
+            <button id="addcart">Add to cart</button>
+            <h3>Product Details</h3>
+            <span id="product-description"></span>
+        </div>
+    </section>
+    <footer>
+        <section class="newsletter">
+            <div class="newstext">
+                <h2>Sign up for our newsletter</h2>
+                <p>Get the latest news and offers</p>
+            </div>
+            <div class="form">
+                <input type="text" placeholder="Enter your email address">
+                <button>Subscribe</button>
+            </div>
+        </section>
+        <div class="footer-content">
+            <div class="links">
+                <h6><a href="privacypol.html">Privacy Policy</a></h6>
+                <h6><a href="privacypol.html#PrivacyPolicy">Terms & Conditions</a></h6>
+                <h6><a href="privacypol.html#Terms">Refund Policy</a></h6>
+                <h6><a href="privacypol.html#Refund">Delivery & Returns</a></h6>
+            <ul class="socials">
+                <li><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i></a></li>
+            </ul>
+            </div>
+            <a href="#" class="logo"><img src="images/logo3.png" alt="logo"></a>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2023 RetroType. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <!--I wanted to use the jquery module to zoom in on the large image but couldnt really figure out how to do it-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-zoom/1.7.21/jquery.zoom.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
